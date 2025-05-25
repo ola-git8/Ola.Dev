@@ -91,7 +91,7 @@ let skills = gsap.timeline({
 });
 
 skills.from(".skills-title", {
-  x: -70,
+  x: -20,
   opacity: 0,
   duration: 1,
   ease: "power3.out"
@@ -114,7 +114,7 @@ let contact = gsap.timeline({
 })
 
 contact.from(".contact-title", {
-  x: 70,
+  x: 20,
   opacity: 0,
   duration: 1,
   ease: "power3.out"
