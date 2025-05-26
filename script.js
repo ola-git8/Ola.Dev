@@ -104,30 +104,30 @@ skills.from(".skills-title", {
   ease: "back.out(1.7)"
 }, "-=1");
 
-
 let contact = gsap.timeline({
   scrollTrigger: {
     trigger: "#contact",
     start: "top 80%",
     toggleActions: "restart none restart none",
+    // markers: true, // enable during debugging
   }
-})
+});
 
 contact.from(".contact-title", {
   x: 20,
   opacity: 0,
   duration: 1,
-  ease: "power3.out"
+  ease: "power3.out",
+  immediateRender: false
 }, "<+=0.1")
-
-
 .from(".contact-link", {
   y: 50,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
-  ease: "back.out(1.7)"
-})
+  ease: "back.out(1.7)",
+  immediateRender: false
+});
 
 // change yearly
 const currentYear = new Date().getFullYear();

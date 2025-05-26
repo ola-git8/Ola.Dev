@@ -125,20 +125,26 @@ h2{
 
     
     /* about section */
-.about-section{
- background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 50%, #bcccdc 100%);
- border-radius: 20px;
- padding: 25px;
- margin-bottom: 50px;
+.about-section {
+  background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 50%, #bcccdc 100%);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
 }
 
-.about-box{
-   background: rgba(15, 15, 15, 0.05);
+.about-box {
+  background: rgba(15, 15, 15, 0.05);
   backdrop-filter: blur(10px);
-       border: 2px solid; 
-      border-radius: 1rem;
-      font-size: 20px;
-    }
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  font-size: 20px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+
 
     /* skills and the icon section */
  
@@ -240,38 +246,51 @@ h2{
 
 
 /* contact */
-.contact-link{
-background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); padding: 20px;
- width: 300px;
- height: 125px;
- border-radius: 25px;
- box-shadow: rgb(173, 216, 230) 0px 0px 10px;
-   align-items: center;
+.contact-box {
+  margin-top: 65px;
+  margin-bottom: 200px;
+}
+
+.contact-title {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  padding: 20px;
+  width: 300px;
+  height: 125px;
+  border-radius: 25px;
+  box-shadow: rgb(173, 216, 230) 0px 0px 10px;
   color: white;
-  text-decoration: none;
   font-size: 1.2rem;
-  transition: transform 0.3s, box-shadow 0.3s;   
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.contact-link:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
 .icon-link i {
   font-size: 2rem;
   transition: color 0.3s, transform 0.3s;
+  margin-bottom: 0.5rem;
 }
-.contact-link:hover {
-  transform: translateY(-8px);  
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); 
-}
-
 
 .icon-link:hover i {
-  color: #0a66c2; 
+  color: #0a66c2;
   transform: translateY(-5px);
 }
 
-.contact-box{
-  margin-top:65px;
-  margin-bottom: 200px;}
 
 /* dark mode */
 body.dark-mode .about-section {
