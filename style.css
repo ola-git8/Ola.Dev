@@ -54,18 +54,21 @@ h2{
 
     /* hero section */
     .hero {
-      height: 100vh;
-      background: linear-gradient(rgba(87, 85, 85, 0.5), rgba(243, 229, 229, 0.5)), url('https://cdn.pixabay.com/photo/2023/06/17/13/37/computer-8070002_640.jpg') no-repeat center center;
-      background-size: cover;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding-top: 80px;
-      font-family: "poppins";
-    }
+  min-height: 100vh;
+  background: linear-gradient(rgba(87, 85, 85, 0.5), rgba(243, 229, 229, 0.5)),
+              url('https://cdn.pixabay.com/photo/2023/06/17/13/37/computer-8070002_640.jpg') 
+              no-repeat center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
 /* hero button and about me button */
   .bn39 {
   background-image: linear-gradient(135deg, #008aff, #86d472);
