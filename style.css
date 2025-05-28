@@ -144,6 +144,16 @@ h2{
   width: 100%;
   margin: auto;
 }
+.about-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top; /* Adjust to focus on your face */
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 
     /* skills and the icon section */
