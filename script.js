@@ -24,6 +24,8 @@ const navbar = document.getElementById("navbar");
 
   // GSAP Hero Timeline + Loader removal
     window.addEventListener("load", () => {
+      // Add this at the top of the load event:
+      body.classList.remove('loading');
       // Hide loader after everything loads
       const loader = document.getElementById("loader");
       loader.style.opacity = 0;
