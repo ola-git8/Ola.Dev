@@ -18,19 +18,9 @@ toggleBtn.addEventListener('click', () => setTheme(!body.classList.contains('dar
 
 // Navbar scroll effect
 const navbar = document.getElementById("navbar");
-
-window.addEventListener("scroll", () => {
-  navbar.classList.toggle("scrolled", window.scrollY > 50);
-});
-
-// Run once on page load to set navbar state correctly
-window.addEventListener("load", () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("scrolled", window.scrollY > 50);
+    });
 
   // GSAP Hero Timeline + Loader removal
     window.addEventListener("load", () => {

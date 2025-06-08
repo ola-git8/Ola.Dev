@@ -115,16 +115,13 @@ h2{
 }
 
 /* navbar changed when scroll */
-  .navbar {
-  padding: 0.5rem 1rem; /* keep padding consistent */
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-}
+    .navbar {
+      transition: background-color 0.3s ease;
+    }
 
-.navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.85) !important;
-  padding: 0.5rem 1rem; /* exactly the same padding */
-}
+    .navbar.scrolled {
+      background-color: rgba(0, 0, 0, 0.85) !important;
+    }
 
     
     /* about section */
