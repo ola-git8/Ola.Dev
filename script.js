@@ -27,7 +27,16 @@ const navbar = document.getElementById("navbar");
       // Hide loader after everything loads
       const loader = document.getElementById("loader");
       loader.style.opacity = 0;
-      setTimeout(() => loader.style.display = "none", 500);
+      setTimeout(() => {
+        loader.style.display = "none";
+        // Force navbar reflow on mobile after loader hides
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        if (navbarToggler) {
+          navbarToggler.offsetHeight; // Force reflow
+        }
+        // Optionally, trigger a resize event
+        window.dispatchEvent(new Event('resize'));
+      }, 500);
 
       // Animate Hero section
       let tl = gsap.timeline({
