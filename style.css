@@ -318,9 +318,3 @@ body.dark-mode .project-box {
   background: #363636 !important;
   color: rgb(212, 212, 212);
 }
-
-/* Prevent layout shift when loader is visible */
-body.loading {
-  overflow: hidden !important;
-  width: 100vw;
-}

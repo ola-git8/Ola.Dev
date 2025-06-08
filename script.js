@@ -23,22 +23,11 @@ const navbar = document.getElementById("navbar");
     });
 
   // GSAP Hero Timeline + Loader removal
-    window.addEventListener("load", () => {
-      // Add this at the top of the load event:
-      body.classList.remove('loading');
+     window.addEventListener("load", () => {
       // Hide loader after everything loads
       const loader = document.getElementById("loader");
       loader.style.opacity = 0;
-      setTimeout(() => {
-        loader.style.display = "none";
-        // Force navbar reflow on mobile after loader hides
-        const navbarToggler = document.querySelector('.navbar-toggler');
-        if (navbarToggler) {
-          navbarToggler.offsetHeight; // Force reflow
-        }
-        // Optionally, trigger a resize event
-        window.dispatchEvent(new Event('resize'));
-      }, 500);
+      setTimeout(() => loader.style.display = "none", 500);
 
       // Animate Hero section
       let tl = gsap.timeline({
