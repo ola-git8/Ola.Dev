@@ -107,12 +107,6 @@ h2{
   background: transparent;
 }
 
-@media (max-width: 576px) {
-  .hero {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
 
 /* navbar changed when scroll */
     .navbar {
@@ -163,10 +157,21 @@ h2{
     }
 
  .skill-card {
+  margin: 20px;
   background: #e9eaeb;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.skill-p{
+  margin: auto;
+  text-align: center;
+  /* text-transform: capitalize; */
+  font-weight: 450;
+  font-size: 15px;
+  margin-top: 8px;
+  font-family: "Poppins", sans-serif;
 }
 
 /*project Card overall style */
@@ -317,4 +322,8 @@ body.dark-mode .hero {
 body.dark-mode .project-box {
   background: #363636 !important;
   color: rgb(212, 212, 212);
+}
+
+body.dark-mode .skill-p{
+  color: #292828;
 }
