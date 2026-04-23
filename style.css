@@ -116,7 +116,7 @@
 }
 
 /* TOGGLER ICON FIX (VISIBLE ON DARK BG) */
-.navbar-toggler {
+/* .navbar-toggler {
     border: none;
 }
 
@@ -126,7 +126,7 @@
 
 .navbar-toggler-icon {
     filter: invert(1);
-}
+} */
 
 /* MOBILE STYLING */
 @media (max-width: 991px) {
@@ -210,7 +210,7 @@
 
   .hero-title {
     font-size: clamp(52px, 8vw, 100px);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 0.95;
     letter-spacing: -0.03em;
     opacity: 0;
