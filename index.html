@@ -1,228 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ola | Frontend Developer</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- CURSOR -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-
-<!-- NAV -->
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-        <a class="nav-logo" href="#home">Oladev</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ola | Frontend Developer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md site-nav"
+      id="nav"
+      aria-label="Main navigation"
+    >
+      <a class="navbar-brand nav-logo" href="#home" aria-label="Ola, home"
+        >Oladev</a
+      >
+      <button
+        class="navbar-toggler menu-toggle"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#primary-navigation"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="primary-navigation">
+        <div class="navbar-nav nav-links">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#projects">Selected work</a>
+          <a class="nav-link" href="#contact"
+            >Contact <span aria-hidden="true">↗</span></a
+          >
         </div>
-    </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-bg-text">OLA</div>
-  <div class="hero-content">
-    <span class="hero-tag">Available for work &nbsp;✦</span>
-    <h1 class="hero-title">
-      Frontend<br><em>Developer.</em>
-    </h1>
-    <p class="hero-sub">
-      I build modern, fast, and thoughtfully designed websites<br>
-      that people actually enjoy using.
-    </p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn btn-solid">View My Work ↓</a>
-      <a href="https://wa.me/qr/H4BCUTJA3EB3K1" class="btn btn-ghost">Get In Touch</a>
-    </div>
-  </div>
-  <div class="scroll-hint">
-    <div class="scroll-line"></div>
-    <span>Scroll</span>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="about">
-  <div class="section-label reveal">About</div>
-  <div class="about-grid">
-    <div>
-      <h2 class="about-title reveal reveal-delay-1">
-        Building the<br><em>web with care</em><br>& precision.
-      </h2>
-      <!-- <div class="stat-row reveal reveal-delay-2">
-        <div class="stat">
-          <div class="stat-num">2+</div>
-          <div class="stat-label">Years Experience</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">12+</div>
-          <div class="stat-label">Projects Done</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">8+</div>
-          <div class="stat-label">Happy Clients</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">100%</div>
-          <div class="stat-label">Committed</div>
-        </div>
-      </div> -->
-    </div>
-    <div class="about-text reveal reveal-delay-2">
-      <p>
-        I'm Oladapo — a frontend developer focused on building responsive, high-performance websites with clean UI and seamless user experience.
-      </p>
-      <p>
-        My approach: every detail matters. From pixel-perfect layouts to smooth interactions, I make sure the product feels as good as it looks.
-      </p>
-      <p>
-        Currently open to freelance projects and full-time opportunities. Let's build something great together.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS MARQUEE -->
-<div class="skills-section">
-  <div class="skills-track">
-    <div class="skills-marquee">
-      <!-- doubled for seamless loop -->
-      <div class="skill-chip"><span class="skill-dot"></span>HTML5</div>
-      <div class="skill-chip"><span class="skill-dot"></span>CSS3</div>
-      <div class="skill-chip"><span class="skill-dot"></span>JavaScript</div>
-      <div class="skill-chip"><span class="skill-dot"></span>Bootstrap</div>
-      <div class="skill-chip"><span class="skill-dot"></span>Responsive Design</div>
-      <div class="skill-chip"><span class="skill-dot"></span>UI / UX</div>
-      <div class="skill-chip"><span class="skill-dot"></span>Git & GitHub</div>
-      <div class="skill-chip"><span class="skill-dot"></span>Performance</div>
-      <div class="skill-chip"><span class="skill-dot"></span>WordPress</div>
-        <div class="skill-chip"><span class="skill-dot"></span>shopify</div>
-      <!-- repeat -->
-      <div class="skill-chip"><span class="skill-dot"></span>HTML5</div>
-      <div class="skill-chip"><span class="skill-dot"></span>CSS3</div>
-      <div class="skill-chip"><span class="skill-dot"></span>JavaScript</div>
-      <div class="skill-chip"><span class="skill-dot"></span>Bootstrap</div>
-      <div class="skill-chip"><span class="skill-dot"></span>Responsive Design</div>
-      <div class="skill-chip"><span class="skill-dot"></span>UI / UX</div>
-      <div class="skill-chip"><span class="skill-dot"></span>Git & GitHub</div>
-      <div class="skill-chip"><span class="skill-dot"></span>Performance</div>
-        <div class="skill-chip"><span class="skill-dot"></span>WordPress</div>
-        <div class="skill-chip"><span class="skill-dot"></span>shopify</div>
-    </div>
-  </div>
-</div>
-
-<!-- PROJECTS -->
-<section id="projects" class="projects">
-  <div class="projects-header">
-    <div>
-      <div class="section-label reveal">Work</div>
-      <h2 class="projects-title reveal reveal-delay-1">Selected<br>Projects.</h2>
-    </div>
-  </div>
-
-  <div class="projects-grid">
-    <div class="project-card">
-      <div class="project-img">
-        <img src="images/spa.png" alt="" loading="lazy" class="img-fluid">
-      </div>  
-      <div class="project-body">
-        <div class="project-meta">
-          <span class="project-tag">Website</span>
-          <span class="project-year">2025</span>
-        </div>
-        <h3 class="project-name">Serenity Touch Spa</h3>
-        <p class="project-desc">Developed a responsive spa website for Serenity Touch Spa, enhancing user engagement and booking experience through intuitive design and seamless navigation.</p>
-        <a href="https://ola-git8.github.io/Serenity-Touch-Spa/" class="project-link">View Live ↗</a>
       </div>
-    </div>
+    </nav>
 
-    <div class="project-card">
-      <div class="project-img">
-        <img src="images/seoulglowng.png" alt="" loading="lazy" class="img-fluid">
-      </div>
-      <div class="project-body">
-        <div class="project-meta">
-          <span class="project-tag">Shopify store</span>
-          <span class="project-year">2026</span>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          I make the<br />web feel <em>thoughtful.</em>
+        </h1>
+        <p class="hero-sub">
+          I’m Oladapo, a frontend developer in Lagos. I turn good ideas into
+          clear, useful websites that work beautifully on every screen.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="hero-button hero-button-primary"
+            >Explore selected work <span aria-hidden="true">↓</span></a
+          >
+          <a
+            href="https://wa.me/qr/H4BCUTJA3EB3K1"
+            class="hero-button hero-button-secondary"
+            >Start a conversation <span aria-hidden="true">↗</span></a
+          >
         </div>
-        <h3 class="project-name">Seoul Glow NG</h3>
-        <p class="project-desc">Built a responsive Shopify storefront for Seoul Glow NG, creating a smoother shopping experience with clear product discovery, polished visuals, and intuitive navigation.</p>
-        <a href="https://www.seoulglowng.com/" class="project-link">View Live ↗</a>
       </div>
-    </div>
+    </section>
 
-      <div class="project-card">
-      <div class="project-img">
-        <img src="images/solar-com.png" alt="" class="img-fluid" loading="lazy">
-      </div>
-      <div class="project-body">
-        <div class="project-meta">
-          <span class="project-tag">Frontend website</span>
-          <span class="project-year">2025</span>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="section-label reveal">About</div>
+      <div class="about-grid">
+        <div>
+          <h2 class="about-title reveal reveal-delay-1">
+            Building the<br /><em>web with care</em><br />& precision.
+          </h2>
         </div>
-        <h3 class="project-name">Solar-Com</h3>
-        <p class="project-desc">  Modern landing page for a fictional solar startup, optimized for mobile and desktop. Reduced bounce rate by 20% and achieved 95%+ mobile usability through responsive design and component-based structure.</p>
-        <a href="https://solar-com.vercel.app" class="project-link">View Live ↗</a>
+        <div class="about-text reveal reveal-delay-2">
+          <p>
+            I’m Oladapo, a frontend developer who enjoys making websites feel
+            simple to use and carefully put together.
+          </p>
+          <p>
+            I work across layout, responsive behavior, and the small
+            interactions that make a site feel finished.
+          </p>
+          <p>
+            I’m open to freelance projects and full-time roles. If you have
+            something in mind, I’d be glad to hear about it.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="project-card">
-      <div class="project-img">
-        <img src="images/build.png" alt="" class="img-fluid" loading="lazy">
-      </div>
-      <div class="project-body">
-        <div class="project-meta">
-          <span class="project-tag">Frontend website</span>
-          <span class="project-year">2026</span>
+    <!-- SKILLS -->
+    <section class="skills-section" aria-label="Skills">
+      <span class="skills-label">Things I work with</span>
+      <div class="skills-window">
+        <div class="skills-track">
+          <ul class="skills-list" aria-label="Skills I use">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Shopify</li>
+            <li>WordPress</li>
+            <li>Responsive design</li>
+            <li>Git</li>
+          </ul>
+          <ul class="skills-list" aria-hidden="true">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Shopify</li>
+            <li>WordPress</li>
+            <li>Responsive design</li>
+            <li>Git</li>
+          </ul>
         </div>
-        <h3 class="project-name">BuildForge Website</h3>
-        <p class="project-desc">modern static website for a construction company, showcasing services, projects, and client testimonials with a clean, user-friendly design. Built to highlight expertise and facilitate client inquiries.</p>
-        <a href="https://ola-git8.github.io/BuildForge/" class="project-link">View Live ↗</a>
       </div>
-    </div>
+    </section>
 
-        <div class="project-card">
-      <div class="project-img">
-        <img src="images/obidasin.png" alt="" class="img-fluid" loading="lazy">
-      </div>
-      <div class="project-body">
-        <div class="project-meta">
-          <span class="project-tag">Frontend website</span>
-          <span class="project-year">2026</span>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <div class="projects-header">
+        <div>
+          <div class="section-label reveal">Work</div>
+          <h2 class="projects-title reveal reveal-delay-1">
+            Selected<br />Projects.
+          </h2>
         </div>
-        <h3 class="project-name">OBSIDIAN</h3>
-        <p class="project-desc">A modern frontend application for showcasing creative work and portfolio items with a sleek, responsive design.</p>
-        <a href="https://obsidian-studio-phi.vercel.app/" class="project-link">View Live ↗</a>
       </div>
-    </div>
-  </div>
-</section>
+
+      <div class="projects-grid row row-cols-1 row-cols-md-2 g-4">
+        <div class="project-card col">
+          <div class="project-img">
+            <img
+              src="images/spa.png"
+              alt="Serenity Touch Spa website preview"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Website</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3 class="project-name">Serenity Touch Spa</h3>
+            <p class="project-desc">
+              A calm, responsive website for a local spa, with clear service
+              details and a straightforward path to booking.
+            </p>
+            <a
+              href="https://ola-git8.github.io/Serenity-Touch-Spa/"
+              class="project-link"
+              >View Live ↗</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card col">
+          <div class="project-img">
+            <img
+              src="images/seoulglowng.png"
+              alt="Seoul Glow NG online store preview"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Shopify store</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3 class="project-name">Seoul Glow NG</h3>
+            <p class="project-desc">
+              A Shopify storefront for Korean beauty products, organized to make
+              browsing and finding products feel easy.
+            </p>
+            <a href="https://www.seoulglowng.com/" class="project-link"
+              >View Live ↗</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card col">
+          <div class="project-img">
+            <img
+              src="images/solar-com.png"
+              alt="Solar-Com website preview"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Frontend website</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3 class="project-name">Solar-Com</h3>
+            <p class="project-desc">
+              A responsive landing page concept for a solar company, designed to
+              explain the offer clearly on mobile and desktop.
+            </p>
+            <a href="https://solar-com.vercel.app" class="project-link"
+              >View Live ↗</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card col">
+          <div class="project-img">
+            <img
+              src="images/build.png"
+              alt="BuildForge construction company website preview"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Frontend website</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3 class="project-name">BuildForge Website</h3>
+            <p class="project-desc">
+              A construction company website covering services, completed
+              projects, and a direct way to make an enquiry.
+            </p>
+            <a
+              href="https://ola-git8.github.io/BuildForge/"
+              class="project-link"
+              >View Live ↗</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card col">
+          <div class="project-img">
+            <img
+              src="images/obidasin.png"
+              alt="Obsidian creative portfolio website preview"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Frontend website</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3 class="project-name">OBSIDIAN</h3>
+            <p class="project-desc">
+              A dark, image-led portfolio concept for presenting creative work
+              across screen sizes.
+            </p>
+            <a
+              href="https://obsidian-studio-phi.vercel.app/"
+              class="project-link"
+              >View Live ↗</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card col">
+          <div class="project-img">
+            <img
+              src="images/business.png"
+              alt="Business consultant website template preview"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Frontend website</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3 class="project-name">Business Consultant Template</h3>
+            <p class="project-desc">
+              A flexible website concept for an independent consultant, with
+              service information and a clear contact path.
+            </p>
+            <a
+              href="https://business-consultant-template-phi.vercel.app/"
+              class="project-link"
+              >View Live ↗</a
+            >
+          </div>
+        </div>
 <!-- 
- <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+         <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
           <div class="card h-100 shadow-sm">
             <img src="images/pdf.png" class="card-img-top" alt="BMI Calculator Screenshot" loading="lazy">
             <div class="card-body d-flex flex-column">
@@ -238,32 +301,39 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>  -->
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <div class="section-label reveal" style="justify-content:center">Contact</div>
-  <h2 class="contact-title reveal reveal-delay-1">
-    Let's work<br><em>together.</em>
-  </h2>
-  <p class="contact-sub reveal reveal-delay-2">
-    Have a project in mind? I'd love to hear about it. Reach out and let's make something remarkable.
-  </p>
-  <div class="reveal reveal-delay-3">
-    <a href="https://wa.me/qr/H4BCUTJA3EB3K1" class="btn btn-solid" style="font-size:1rem; padding:18px 40px;">
-      Message on WhatsApp ↗
-    </a>
-    <br>
-    <a href="mailto:oladapobolaji681@gmail.com" class="contact-email">oladapobolaji681@gmail.com</a>
-  </div>
-</section>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="section-label reveal">Contact</div>
+      <h2 class="contact-title reveal reveal-delay-1">
+        Let's work<br /><em>together.</em>
+      </h2>
+      <p class="contact-sub reveal reveal-delay-2">
+        Have a website in mind? Tell me a little about it and we can take it
+        from there.
+      </p>
+      <div class="reveal reveal-delay-3">
+        <a href="https://wa.me/qr/H4BCUTJA3EB3K1" class="btn btn-solid">
+          Message on WhatsApp ↗
+        </a>
+        <br />
+        <a href="mailto:oladapobolaji681@gmail.com" class="contact-email"
+          >oladapobolaji681@gmail.com</a
+        >
+      </div>
+    </section>
 
-<!-- FOOTER -->
-<footer>
-  <span class="footer-copy"> <span id="year">©</span> Ola.Dev — All rights reserved</span>
-  <span class="footer-made">Designed & built with <span>♥</span></span>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
-</body>
+    <!-- FOOTER -->
+    <footer>
+      <span class="footer-copy">
+        <span id="year">©</span> Ola.Dev — All rights reserved</span
+      >
+      <span class="footer-made">Designed & built with <span>♥</span></span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
